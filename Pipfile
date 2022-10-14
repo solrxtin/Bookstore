@@ -8,6 +8,11 @@ django = "*"
 psycopg2-binary = "*"
 pillow = "*"
 python-dotenv = "*"
+selenium = "*"
+django-extensions = "*"
+pydotplus = "*"
+ipython = "*"
+werkzeug = "*"
 
 [dev-packages]
 

@@ -47,6 +47,9 @@ INSTALLED_APPS = [
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
+    # My middleware
+    'main.middlewares.basket_middleware',
+    
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
@@ -171,3 +174,5 @@ else:
     EMAIL_BACKEND = (
     "django.core.mail.backends.console.EmailBackend"
     ) 
+
+AUTH_USER_MODEL = "main.User"
